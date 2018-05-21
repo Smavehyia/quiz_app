@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:backgroundTint="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/white"
+            android:padding="30dp"
+            android:text="Ready to get grilled about coding in C++?"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="1. What is the correct syntax for commenting?"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+        <Button
+            android:background="#00BCD4"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A) /// This is a comment "
+            android:textAllCaps="false"
+            android:id="@+id/q1_optionA"
+            android:textAlignment="center"
+            android:onClick="incorrectAnswer"
+            />
+        <Button
+            android:background="#00BCD4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B) --This is a comment--"
+            android:textAllCaps="false"
+            android:id="@+id/q1_optionB"
+            android:textAlignment="center"
+            android:onClick="incorrectAnswer"/>
+        <Button
+            android:background="#00BCD4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C) // This is a comment "
+            android:textAllCaps="false"
+            android:id="@+id/correctAnswer1"
+            android:textAlignment="center"
+            android:onClick="correctAnswer1"/>
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Which option declares a variable properly?"
+            android:textAlignment="center"
+            android:padding="30dp"/>
+        <Button
+            android:background="#00BCD4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A) int num =1; "
+            android:textAllCaps="false"
+            android:id="@+id/correctAnswer2"
+            android:textAlignment="center"
+            android:onClick="correctAnswer2"/>
+        <Button
+            android:background="#00BCD4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B) Int Num=1;"
+            android:textAllCaps="false"
+            android:id="@+id/q2_optionB"
+            android:textAlignment="center"
+            android:onClick="incorrectAnswer"/>
+        <Button
+            android:background="#00BCD4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C) int-num=1; "
+            android:textAllCaps="false"
+            android:id="@+id/q2_optionC"
+            android:textAlignment="center"
+            android:onClick="incorrectAnswer"/>
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. What does STL stand for, in C++?"
+            android:textAlignment="center"
+            android:padding="30dp"/>
+        <Button
+            android:background="#00BCD4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A) Standard Template Library "
+            android:textAllCaps="false"
+            android:id="@+id/correctAnswer3"
+            android:textAlignment="center"
+            android:onClick="correctAnswer3"/>
+        <Button
+            android:background="#00BCD4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B) System Total Library"
+            android:textAllCaps="false"
+            android:id="@+id/q3_optionB"
+            android:textAlignment="center"
+            android:onClick="incorrectAnswer"/>
+        <Button
+            android:background="#00BCD4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C) Standard Totals Library"
+            android:textAllCaps="false"
+            android:id="@+id/q3_optionC"
+            android:textAlignment="center"
+            android:onClick="incorrectAnswer"/>
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. What is an exception?"
+            android:textAlignment="center"
+            android:padding="30dp"/>
+        <Button
+            android:background="#00BCD4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A) Compilation Error"
+            android:textAllCaps="false"
+            android:id="@+id/q4_optionA"
+            android:textAlignment="center"
+            android:onClick="incorrectAnswer"/>
+        <Button
+            android:background="#00BCD4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B) Logical Error"
+            android:textAllCaps="false"
+            android:id="@+id/q4_optionB"
+            android:textAlignment="center"
+            android:onClick="incorrectAnswer"/>
+        <Button
+            android:background="#00BCD4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C) Runtime Error"
+            android:textAllCaps="false"
+            android:id="@+id/correctAnswer4"
+            android:textAlignment="center"
+            android:onClick="correctAnswer4"/>
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. The  operator is called the:"
+            android:textAlignment="center"
+            android:padding="30dp"/>
+        <Button
+            android:background="#00BCD4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A) Extraction Operator"
+            android:textAllCaps="false"
+            android:id="@+id/q5_optionA"
+            android:textAlignment="center"
+            android:onClick="incorrectAnswer"/>
+        <Button
+            android:background="#00BCD4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B) Insertion Operator"
+            android:textAllCaps="false"
+            android:id="@+id/correctAnswer5"
+            android:textAlignment="center"
+            android:onClick="correctAnswer5"/>
+        <Button
+            android:background="#00BCD4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C) Abstraction Operator"
+            android:textAllCaps="false"
+            android:id="@+id/q5_optionC"
+            android:textAlignment="center"
+            android:onClick="incorrectAnswer"/>
+        <Button
+            android:background="#FFC107"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:onClick="submitQuiz"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: "
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:textAllCaps="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/score"
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:textAllCaps="true"/>
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:id="@+id/comment"
+            android:hint="Add a comment..."/>
+        <Button
+            android:background="#FFC107"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share With Friends!"
+            android:id="@+id/share_button"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:onClick="shareWithFriends"/>
+
+    </LinearLayout>
+
+</ScrollView>
